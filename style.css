@@ -54,6 +54,7 @@ body {
     color: black;
     background-color: white;
     border: none;
+    transition: 0.5s;
   }
   
   .openbtn:hover {
@@ -69,6 +70,39 @@ body {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-.about{
+#about{
   font-family: 'Lobster', cursive;
+}
+
+#pc{
+  padding: 15px;
+  background-color:black;
+  margin: 10px;
+  color: white;
+}
+
+#pc img{
+  opacity: 0.85;
+  transition: 0.5s;
+}
+
+#pc img:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#up{
+  visibility: hidden;
+  color: rgb(172, 172, 172);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#up:hover{
+  color: #000;
 }
