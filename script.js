@@ -1,11 +1,11 @@
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("main").style.visibility = "hidden";
+    document.getElementById("openbtn").style.marginLeft = "250px";
+    document.getElementById("openbtn").style.visibility = "hidden";
   }
   
   function closeNav() {
     document.getElementById("sidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("main").style.visibility= "visible";
+    document.getElementById("openbtn").style.marginLeft= "0";
+    document.getElementById("openbtn").style.visibility= "visible";
   }

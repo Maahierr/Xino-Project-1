@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Apple</title>
+    <title>Alienware PCs</title>
 </head>
 
 <body>
-
+    <div id="home"></div>
     <div id="sidebar" class="sidebar">
+        <a href="" onclick="closeNav()">Home</a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#product" onclick="closeNav()">Products</a>
         <a href="#contact" onclick="closeNav()">Contact</a>
@@ -20,13 +21,19 @@
     </div>
 
     <div>
-        <button id="main" class="openbtn" onclick="openNav()">&#9776</button>
-        <center><a href="/"><img id="logo" src="media/logo.png" width="25%" height="25%"></a></center>
+        <button id="openbtn" class="openbtn" onclick="openNav()">&#9776</button>
+        <center>
+            <a href="/" onclick="closeNav()"><img id="logo" src="media/logo.png" width="50%" height="auto"></a>
+        </center>
     </div>
 
-    <div class="container">
+    <div class="container" onclick="closeNav()">
         <div id="about">
-            
+            <center>
+                <img src="media/ab_bg.png" width="95%" height="auto">
+                <br><br>
+                <p><h1>Best Gaming Quality</h1></p>
+            </center>
         </div>
 
         <div id="product">
