@@ -70,26 +70,35 @@ body {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-#about{
+#pc{
+  width: 100%;
   font-family: 'Lobster', cursive;
 }
 
-#pc{
-  padding: 15px;
-  background-color:black;
-  margin: 10px;
+#about{
+  width: 100%;
+}
+
+#content{
+  width: 100%;
+}
+
+.btn{
+  cursor: pointer;
+  background: rgb(81, 177, 255);
+  border: 3px solid white;
+  width: 100px;
+  padding: 8px;
+  border-radius: 10px;
   color: white;
-}
-
-#pc img{
-  opacity: 0.85;
+  font-family: 'Patrick Hand', cursive;
   transition: 0.5s;
-}
-
-#pc img:hover{
-  opacity: 1;
-  transition: 0.5s;
-}
+  }
+  
+.btn:hover{
+  background: rgb(96, 96, 255);
+  box-shadow: 5px 5px 5px rgb(96, 96, 255); 
+}  
 
 #up{
   visibility: hidden;
@@ -104,5 +113,5 @@ body {
   transition: 0.5s;
 }
 #up:hover{
-  color: #000;
+  color: red;
 }
