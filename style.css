@@ -70,13 +70,14 @@ body {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+  
+#about{
+  width: 100%;
+}
+
 #pc{
   width: 100%;
   font-family: 'Lobster', cursive;
-}
-
-#about{
-  width: 100%;
 }
 
 #content{
