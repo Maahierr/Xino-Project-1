@@ -108,6 +108,7 @@ body {
   padding-top: 20px;
   float: left;
   width: 50%;
+  vertical-align: middle;
 }
 
 #image{
