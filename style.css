@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Rampart+One&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
@@ -72,6 +74,21 @@ body {
     .sidebar a {font-size: 18px;}
   }
 
+#textColor{
+  text-align: center;
+  font-family: 'Rampart One', cursive;
+  color: rgb(0, 0, 0);
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
 #pc{
   width: 100%;
   font-family: 'Lobster', cursive;
@@ -81,38 +98,32 @@ body {
   padding-top: 2px;
   background-color: #f1f1f1;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
-  grid-auto-rows: 100px;
-  grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b";
 }
 
 .imgs{
   width: 100%;
-  grid-area: a;
 }
 
 #visibleImg{
-  vertical-align: middle;
+  padding-top: 20px;
+  float: left;
+  width: 50%;
+}
+
+#image{
+  width: 30%;
 }
 
 .prop{
   list-style-type:none;
-  grid-area: b;
-  justify-self: start;
+  padding-top: 20px;
+  overflow-y: scroll;
+  float: left;
+  width: 50%;
 }
 
 .prop li{
   padding: 6px;
-}
-
-#i1,#i2,#i3,#i4,#i5{
-  width: 150px;
-  height: 150x;
-  cursor: pointer;
 }
 
 #i1:hover,#i2:hover,#i3:hover,#i4:hover,#i5:hover{
@@ -137,6 +148,7 @@ body {
 }
 
 #contact{
+  font-family: 'Klee One', cursive;
   border-radius: 5px;
   background-color: #fffbfb;
   padding: 20px;
@@ -173,7 +185,7 @@ input[type=text], input[type=email], input[type=number], textarea{
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  font-size: 50px;
+  font-size: 25px;
   cursor: pointer;
   text-decoration: none;
   transition: 0.5s;

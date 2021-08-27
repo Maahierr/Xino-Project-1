@@ -1,15 +1,5 @@
 var  up = document.getElementById('up');
-var img = document.createElement("img");
-var src = document.getElementById("visibleImg");
-
-img.style.width = "250px";
-img.style.height = "250px";
-
-var i1 = document.getElementById('i1');
-var i2 = document.getElementById('i2');
-var i3 = document.getElementById('i3');
-var i4 = document.getElementById('i4');
-var i5 = document.getElementById('i5');
+let images = ['media/1.jpg', 'media/2.jpg', 'media/3.jpg', 'media/4.jpg', 'media/5.jpg']
 
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
@@ -32,29 +22,7 @@ window.onscroll = function(){
   }
 }
 
-function visibleImg(){
-  if(i1.onclick){
-    img.src = "media/1.jpg";
-    src.appendChild(img);
-  }
-
-  else if(i2.onclick){
-    img.src = "media/2.jpg";
-    src.appendChild(img);
-  }
-
-  else if(i3.onclick){
-    img.src = "media/3.jpg";
-    src.appendChild(img);
-  }
-
-  else if(i4.onclick){
-    img.src = "media/4.jpg";
-    src.appendChild(img);
-  }
-
-  else if(i5.onclick){
-    img.src = "media/5.jpg";
-    src.appendChild(img);
-  }
-}
+setInterval(function(){
+  let random = Math.floor(Math.random ()* 5);
+  image.src = images[random];
+},3000)
