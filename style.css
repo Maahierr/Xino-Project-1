@@ -3,6 +3,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html{
@@ -52,7 +53,7 @@ body {
     font-size: 25px;
     cursor: pointer;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
     transition: 0.5s;
   }
@@ -70,10 +71,6 @@ body {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-  
-#about{
-  width: 100%;
-}
 
 #pc{
   width: 100%;
@@ -81,7 +78,45 @@ body {
 }
 
 #content{
+  padding-top: 2px;
+  background-color: #f1f1f1;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b";
+}
+
+.imgs{
+  width: 100%;
+  grid-area: a;
+}
+
+#visibleImg{
+  vertical-align: middle;
+}
+
+.prop{
+  list-style-type:none;
+  grid-area: b;
+  justify-self: start;
+}
+
+.prop li{
+  padding: 6px;
+}
+
+#i1,#i2,#i3,#i4,#i5{
+  width: 150px;
+  height: 150x;
+  cursor: pointer;
+}
+
+#i1:hover,#i2:hover,#i3:hover,#i4:hover,#i5:hover{
+  border: 2px solid black;
 }
 
 .btn{
@@ -99,7 +134,37 @@ body {
 .btn:hover{
   background: rgb(96, 96, 255);
   box-shadow: 5px 5px 5px rgb(96, 96, 255); 
-}  
+}
+
+#contact{
+  border-radius: 5px;
+  background-color: #fffbfb;
+  padding: 20px;
+  margin: 5px;
+}
+
+input[type=text], input[type=email], input[type=number], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#more{
+  font-family: 'Lobster', cursive;
+  display: inline;
+  background-color: #fffbfb;
+}
+
+#more img{
+  width: 250px;
+  height: 250px;
+  opacity: 0.9;
+}
 
 #up{
   visibility: hidden;
