@@ -9,7 +9,7 @@
     <title>Alienware PCs</title>
 </head>
 
-<body>
+<body onload="show1()">
     <div id="home"></div>
     <div id="sidebar" class="sidebar">
         <a href="#home" onclick="closeNav()">Home</a>
@@ -42,10 +42,19 @@
                     <div id="visibleImg">
                         <img src="" id="image">
                     </div>
+                    <p id="text" style="font-size: 20px; font-weight: bold;"></p>
+                    <br><br><br>
+                    <div id="smallImg">
+                        <img src="media/1.jpg" id="show" alt="Front View" title="Front View" onclick="show1()">
+                        <img src="media/2.jpg" id="show" alt="Right Side View" title="Right Side View" onclick="show2()">
+                        <img src="media/3.jpg" id="show" alt="Left Side View" title="Left Side View" onclick="show3()">
+                        <img src="media/4.jpg" id="show" alt="Back View" title="Back View" onclick="show4()">
+                        <img src="media/5.jpg" id="show" alt="Top View" title="Top View" onclick="show5()">
+                    </div>
                 </center>
             </div>
 
-
+            <br><br><br>
 
             <ul class="prop">
                 <li>

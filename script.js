@@ -1,5 +1,6 @@
 var  up = document.getElementById('up');
-let images = ['media/1.jpg', 'media/2.jpg', 'media/3.jpg', 'media/4.jpg', 'media/5.jpg']
+var text = document.getElementById('text');
+var image = document.getElementById('image')
 
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
@@ -22,7 +23,23 @@ window.onscroll = function(){
   }
 }
 
-setInterval(function(){
-  let random = Math.floor(Math.random ()* 5);
-  image.src = images[random];
-},3000)
+function show1() {
+  document.getElementById('image').src='media/1.jpg';
+  text.innerHTML = "Front View";
+}
+function show2() {
+  document.getElementById('image').src='media/2.jpg';
+  text.innerHTML = "Right Side View";
+}
+function show3() {
+  document.getElementById('image').src='media/3.jpg';
+  text.innerHTML = "Left Side View";
+}
+function show4() {
+  document.getElementById('image').src='media/4.jpg';
+  text.innerHTML = "Back View";
+}
+function show5() {
+  document.getElementById('image').src='media/5.jpg';
+  text.innerHTML = "Top View";
+}
