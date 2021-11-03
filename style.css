@@ -69,9 +69,12 @@ body {
     padding: 16px;
   }
   
-  @media screen and (max-height: 450px) {
+  @media only screen and (max-width: 550px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    .prop li{
+      margin-left: 12px;
+    }
   }
 
 #textColor{
@@ -129,18 +132,21 @@ body {
   width: 30%;
 }
 
+@media only screen and (min-width: 550px) and (max-width: 1200px) {
+  .prop li{
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .prop li{
+    margin-left: 25%;
+  }
+}
+
 .prop li{
   list-style-type:none;
   padding-bottom: 6px;
-  margin-left: 25%;
-}
-
-.prop li{
-  padding: 6px;
-}
-
-#i1:hover,#i2:hover,#i3:hover,#i4:hover,#i5:hover{
-  border: 2px solid black;
 }
 
 .btn{
